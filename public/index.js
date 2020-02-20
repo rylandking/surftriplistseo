@@ -237,9 +237,9 @@ const setSurfSpotNote = doc => {
   } else if (bestMonths.length === 2) {
     bestMonthsPhrase = `is in ${bestMonths[0]} or ${bestMonths[1]}`;
   } else if (bestMonths.length === 3) {
-    bestMonthsPhrase = `is in ${bestMonths[0]}, ${bestMonths[1]}, or ${bestMonths[2]}`;
+    bestMonthsPhrase = `is in ${bestMonths[0]}, ${bestMonths[1]} or ${bestMonths[2]}`;
   } else if (bestMonths.length === 4) {
-    bestMonthsPhrase = `is in ${bestMonths[0]}, ${bestMonths[1]}, ${bestMonths[2]}, or ${bestMonths[3]}`;
+    bestMonthsPhrase = `is in ${bestMonths[0]}, ${bestMonths[1]}, ${bestMonths[2]} or ${bestMonths[3]}`;
   } else if (bestMonths.length === 5) {
     bestMonthsPhrase = `is in ${bestMonths[0]}, ${bestMonths[1]}, ${bestMonths[2]}, ${bestMonths[3]} or ${bestMonths[4]}`;
   } else if (bestMonths.length === 6) {
@@ -285,7 +285,7 @@ const setSurfSpotNote = doc => {
     
     <p class="mb-2">${ssNameContraction} surf is ${skillPhrase} ${waveDir} ${waveType} break.</p>
     
-    <p class="mb-2">The waves are at their best with a ${period} ${swellDir} swell at around ${waveSize}. If you get it with a light ${windDir} wind at ${tide} tide, it’ll be close to as good as it gets. It’s a ${stars} star surf spot, so that means the surf would be ${starDesc} for ${skill} surfers.</p>
+    <p class="mb-2">The waves at ${ssName} are at their best with a ${period} ${swellDir} swell at around ${waveSize}. If you get it with a light ${windDir} wind at ${tide} tide, it’ll be close to as good as it gets — it’s a ${stars} star surf spot, so that means the surf would be ${starDesc} for ${skill} surfers.</p>
     
     <p class="mb-2">The best time to surf ${ssName} ${bestMonthsPhrase}.</p>
 
